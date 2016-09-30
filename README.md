@@ -29,6 +29,8 @@ On terminal.
 
 Clone this repository `git clone https://github.com/srMarquinho/bitcoin-widget`.
 
+Install dependencies `bundle`
+
 Run the script `ruby app.rb` to live update.
 
 ### Difficulties:
