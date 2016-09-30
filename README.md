@@ -1,7 +1,7 @@
 # Geckoboard Ruby script
 Ruby `3.2.1`
 
-This little Ruby script will push the latest bitcoin rate to a Geckoboard dashboard every 10 minutes.
+This little Ruby script will generate and/or push the latest average bitcoin rate to a Geckoboard dashboard every 10 minutes.
 
 I kept in mind the simplest and minimum amount of code. Also it has been written in a short amount of time. Meaning it still needs some work.
 
@@ -22,14 +22,15 @@ At this moment it pushes Pounds, US Dollars, Euros and Reals.
 
 ### How to use:
 
-View the dashboard [https://srmarquinho.geckoboard.com/dashboards/0DC18FF9ECFD3A4D](https://srmarquinho.geckoboard.com/dashboards/0DC18FF9ECFD3A4D)
-
-
-On terminal.
+To view the dashboard: [https://srmarquinho.geckoboard.com/dashboards/0DC18FF9ECFD3A4D](https://srmarquinho.geckoboard.com/dashboards/0DC18FF9ECFD3A4D)
 
 Clone this repository `git clone https://github.com/srMarquinho/bitcoin-widget`.
 
 Install dependencies `bundle`
+
+Set an `ENV["GECKOBOARD_API_KEY"]` environment or change `GECKOBOARD_API_KEY` constant with your Geckoboard api.
+
+Change the constant `INTERVAL_IN_SECONDS` to change the time interval to push.
 
 Run the script `ruby app.rb` to live update.
 
